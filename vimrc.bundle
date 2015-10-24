@@ -35,6 +35,7 @@
   " Plugin 'user/L9', {'name': 'newL9'}
 " Init Vundle }}}
 
+Plugin 'tpope/vim-sensible'
 
 " Finalize Vundle {{{
   " All of your Plugins must be added before the following line
