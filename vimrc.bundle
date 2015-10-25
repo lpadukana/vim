@@ -87,6 +87,14 @@ colorscheme jellybeans
 
 " Fugitive Config {{{
 
+  " Delete fugitive buffers so that they don't pollute buffers
+  autocmd BufReadPost fugitive://* set bufhidden=delete
+
+  " .. to go up to the parent dir
+  autocmd User fugitive 
+    \ if fugitive#buffer().type() =~# '^\%(tree\|blob\)$' |
+    \   nnoremap <buffer> .. :edit %:h<CR> |
+    \ endif
 
 " Fugitive Config }}}
 
