@@ -85,4 +85,9 @@ colorscheme jellybeans
 
 " Airline Config }}}
 
+" Fugitive Config {{{
+
+
+" Fugitive Config }}}
+
 " vim: foldlevel=0 foldmethod=marker
