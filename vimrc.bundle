@@ -58,8 +58,12 @@ Plugin 'airblade/vim-gitgutter'
   " Put your non-Plugin stuff after this line
 " Finalize Vundle }}}
 
-set background=dark
-colorscheme jellybeans
+" Set colors {{{
+
+  set background=dark
+  colorscheme jellybeans
+
+" Set colors }}}
 
 " Airline Config {{{
 
