@@ -37,6 +37,7 @@
 
 Plugin 'tpope/vim-sensible'
 Plugin 'bling/vim-airline'
+Plugin 'nanotech/jellybeans.vim'
 
 " Finalize Vundle {{{
   " All of your Plugins must be added before the following line
@@ -54,5 +55,8 @@ Plugin 'bling/vim-airline'
   " see :h vundle for more details or wiki for FAQ
   " Put your non-Plugin stuff after this line
 " Finalize Vundle }}}
+
+set background=dark
+colorscheme jellybeans
 
 " vim: foldlevel=0 foldmethod=marker
