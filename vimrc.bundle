@@ -1,41 +1,45 @@
 " This code is copied from https://github.com/VundleVim/Vundle.vim
 
-" Init Vundle {{{
-  set nocompatible              " be iMproved, required
-  filetype off                  " required
+" Plugins {{{
 
-  " set the runtime path to include Vundle and initialize
-  set rtp+=~/.vim/bundle/Vundle.vim
-  call vundle#begin()
-  " alternatively, pass a path where Vundle should install plugins
-  " call vundle#begin('~/some/path/here')
+  " Init Vundle {{{
+    set nocompatible              " be iMproved, required
+    filetype off                  " required
 
-  " let Vundle manage Vundle, required
-  Plugin 'VundleVim/Vundle.vim'
+    " set the runtime path to include Vundle and initialize
+    set rtp+=~/.vim/bundle/Vundle.vim
+    call vundle#begin()
+    " alternatively, pass a path where Vundle should install plugins
+    " call vundle#begin('~/some/path/here')
 
-  " Plugin Samples {{{
-    " The following are examples of different formats supported.
-    " Keep Plugin commands between vundle#begin/end.
-    " plugin on GitHub repo
-    " Plugin 'tpope/vim-fugitive'
+    " let Vundle manage Vundle, required
+    Plugin 'VundleVim/Vundle.vim'
 
-    " plugin from http://vim-scripts.org/vim/scripts.html
-    " Plugin 'L9'
+    " Plugin Samples {{{
+      " The following are examples of different formats supported.
+      " Keep Plugin commands between vundle#begin/end.
+      " plugin on GitHub repo
+      " Plugin 'tpope/vim-fugitive'
 
-    " Git plugin not hosted on GitHub
-    " Plugin 'git://git.wincent.com/command-t.git'
+      " plugin from http://vim-scripts.org/vim/scripts.html
+      " Plugin 'L9'
 
-    " git repos on your local machine (i.e. when working on your own plugin)
-    " Plugin 'file:///home/gmarik/path/to/plugin'
+      " Git plugin not hosted on GitHub
+      " Plugin 'git://git.wincent.com/command-t.git'
 
-    " The sparkup vim script is in a subdirectory of this repo called vim.
-    " Pass the path to set the runtimepath properly.
-    " Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
+      " git repos on your local machine (i.e. when working on your own plugin)
+      " Plugin 'file:///home/gmarik/path/to/plugin'
 
-    " Avoid a name conflict with L9
-    " Plugin 'user/L9', {'name': 'newL9'}
-  " Plugin Samples }}}
-" Init Vundle }}}
+      " The sparkup vim script is in a subdirectory of this repo called vim.
+      " Pass the path to set the runtimepath properly.
+      " Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
+
+      " Avoid a name conflict with L9
+      " Plugin 'user/L9', {'name': 'newL9'}
+    " Plugin Samples }}}
+  " Init Vundle }}}
+
+" All of your Plugins must be added after this
 
 Plugin 'tpope/vim-sensible'
 Plugin 'bling/vim-airline'
@@ -44,23 +48,33 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'scrooloose/nerdtree'
 Plugin 'jistr/vim-nerdtree-tabs'
+Plugin 'tpope/vim-unimpaired'
+Plugin 'tpope/vim-surround'
+Plugin 'tpope/vim-repeat'
+Plugin 'tpope/vim-jdaddy'
+Plugin 'tpope/vim-endwise'
+Plugin 'vim-ruby/vim-ruby'
 
-" Finalize Vundle {{{
-  " All of your Plugins must be added before the following line
-  call vundle#end()            " required
-  filetype plugin indent on    " required
-  " To ignore plugin indent changes, instead use:
-  "filetype plugin on
-  "
-  " Brief help
-  " :PluginList       - lists configured plugins
-  " :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
-  " :PluginSearch foo - searches for foo; append `!` to refresh local cache
-  " :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
-  "
-  " see :h vundle for more details or wiki for FAQ
-  " Put your non-Plugin stuff after this line
-" Finalize Vundle }}}
+
+" All of your Plugins must be added before this
+
+  " Finalize Vundle {{{
+    call vundle#end()            " required
+    filetype plugin indent on    " required
+    " To ignore plugin indent changes, instead use:
+    " filetype plugin on
+
+    " Brief help
+    " :PluginList       - lists configured plugins
+    " :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
+    " :PluginSearch foo - searches for foo; append `!` to refresh local cache
+    " :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
+    "
+    " see :h vundle for more details or wiki for FAQ
+    " Put your non-Plugin stuff after this line
+  " Finalize Vundle }}}
+
+" Plugins }}}
 
 " Set colors {{{
 
