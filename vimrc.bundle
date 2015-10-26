@@ -133,6 +133,10 @@ Plugin 'scrooloose/syntastic'
     let NERDTreeIgnore = ['tmp', '.yardoc', 'pkg']
 " }}}
 
+" Git Gutter Settings {{{
+    let g:gitgutter_max_signs = 1000
+" }}}
+
 " CtrlP Mappings {{{
     let g:ctrlp_working_path_mode = 2
     let g:ctrlp_by_filename = 1
