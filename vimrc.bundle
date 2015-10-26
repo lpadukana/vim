@@ -180,5 +180,9 @@ Plugin 'maxbrunsfeld/vim-yankstack'
     let g:syntastic_html_tidy_ignore_errors=["proprietary attribute \"ng-"]
 " }}}
 
+" Gundo - show undo tree {{{
+    map <leader>u :GundoToggle<cr>
+" }}}
+
 " vim: sw=4 ts=4 sts=4 et tw=78 foldlevel=0 foldmethod=marker
 
