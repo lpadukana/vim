@@ -170,4 +170,5 @@ Plugin 'bronson/vim-visual-star-search'
     let g:syntastic_html_tidy_ignore_errors=["proprietary attribute \"ng-"]
 " }}}
 
-" vim: foldlevel=0 foldmethod=marker
+" vim: sw=4 ts=4 sts=4 et tw=78 foldlevel=0 foldmethod=marker
+
