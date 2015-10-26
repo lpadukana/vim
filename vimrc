@@ -31,11 +31,12 @@ endif
     set shiftround          " Indent to the closest shiftwidth
     set exrc                " Allow a .vimrc in the project directory
     set secure              " Make sure those project .vimrc's are safe
-    set listchars=tab:=»,trail:·
 
+    set listchars=tab:=»,trail:·
     set synmaxcol=128
     set encoding=utf-8
     set number
+    set macmeta
 " }}}
 
 " Improve vim's scrolling speed {{{

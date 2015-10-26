@@ -58,6 +58,7 @@ Plugin 'kien/ctrlp.vim'
 Plugin 'scrooloose/syntastic'
 Plugin 'bronson/vim-visual-star-search'
 Plugin 'sjl/gundo.vim'
+Plugin 'maxbrunsfeld/vim-yankstack'
 
 " All of your Plugins must be added before this
 
@@ -78,6 +79,14 @@ Plugin 'sjl/gundo.vim'
   " Finalize Vundle }}}
 
 " Plugins }}}
+
+" Yankstack {{{
+    " This needs to happen before other mappings involving y, d, c, etc
+    call yankstack#setup()
+
+    nmap <leader>o <Plug>yankstack_substitute_older_paste
+    nmap <leader>i <Plug>yankstack_substitute_newer_paste
+" }}}
 
 " Set colors {{{
 
