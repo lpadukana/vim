@@ -155,17 +155,11 @@ endif
 " }}}
 
 " Function Keys {{{
-    nmap <F7> :set list!<cr>:set list?<cr>
-
-    nmap <F8> :set hls!<cr>:set hls?<cr>
-
-    " Toggle line numbers along the side
+    nmap <F6> :set list!<cr>:set list?<cr>
+    nmap <F7> :set hls!<cr>:set hls?<cr>
+    nmap <F8> :set relativenumber!<cr>:set relativenumber?<cr>
     nmap <F9> :set nu!<cr>:set nu?<cr>
-
-    " Toggle line wrapping
     nmap <F10> :set wrap!<cr>:set wrap?<cr>
-
-    " Toggle spellcheck
     nmap <F11> :set spell!<cr>:set spell?<cr>
 
     " Toggle diff view (need to toggle on both desired buffers)
