@@ -185,5 +185,19 @@ endif
     vmap <S-Down> :m'>+<cr>`<my`>mzgv`yo`z
 " Use Shift-Up, Shift-Down to move lines }}}
 
+" Restore cursor position {{{
+    function! RestoreCursor()
+    if line("'\"") <= line("$")
+        normal! g`"
+        return 1
+    endif
+    endfunction
+
+    augroup restoreCursor
+    autocmd!
+    autocmd BufWinEnter * call RestoreCursor()
+    augroup END
+" }}}
+
 " vim: sw=4 ts=4 sts=4 et tw=78 foldlevel=0 foldmethod=marker
 
