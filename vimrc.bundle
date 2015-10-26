@@ -92,6 +92,7 @@ Plugin 'scrooloose/syntastic'
   " let g:airline_theme = 'serene'
 
   let g:airline#extensions#tabline#enabled = 1
+  let g:airline#extensions#tabline#show_buffers = 1
 
   if !exists('g:airline_symbols')
     let g:airline_symbols = {}
