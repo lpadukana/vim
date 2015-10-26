@@ -42,6 +42,8 @@ Plugin 'bling/vim-airline'
 Plugin 'nanotech/jellybeans.vim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'airblade/vim-gitgutter'
+Plugin 'scrooloose/nerdtree'
+Plugin 'jistr/vim-nerdtree-tabs'
 
 " Finalize Vundle {{{
   " All of your Plugins must be added before the following line
@@ -103,5 +105,16 @@ Plugin 'airblade/vim-gitgutter'
     \ endif
 
 " Fugitive Config }}}
+
+" NERDTree {{{
+    nmap <leader>f :NERDTreeTabsToggle<cr>
+    nmap <leader>F :NERDTreeFind<cr>
+
+    " let NERDTreeQuitOnOpen=1
+    let g:NERDTreeChDirMode=2
+    let NERDTreeShowBookmarks=1
+    let NERDTreeHighlightCursorline=1
+    let NERDTreeIgnore = ['tmp', '.yardoc', 'pkg']
+" }}}
 
 " vim: foldlevel=0 foldmethod=marker
