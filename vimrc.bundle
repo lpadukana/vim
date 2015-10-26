@@ -57,6 +57,7 @@ Plugin 'vim-ruby/vim-ruby'
 Plugin 'kien/ctrlp.vim'
 Plugin 'scrooloose/syntastic'
 Plugin 'bronson/vim-visual-star-search'
+Plugin 'sjl/gundo.vim'
 
 " All of your Plugins must be added before this
 
