@@ -111,16 +111,20 @@ Plugin 'scrooloose/syntastic'
 " Airline Config }}}
 
 " Fugitive Config {{{
+    " Delete fugitive buffers so that they don't pollute buffers
+    autocmd BufReadPost fugitive://* set bufhidden=delete
 
-  " Delete fugitive buffers so that they don't pollute buffers
-  autocmd BufReadPost fugitive://* set bufhidden=delete
+    " .. to go up to the parent dir
+    autocmd User fugitive
+      \ if fugitive#buffer().type() =~# '^\%(tree\|blob\)$' |
+      \   nnoremap <buffer> .. :edit %:h<CR> |
+      \ endif
 
-  " .. to go up to the parent dir
-  autocmd User fugitive
-    \ if fugitive#buffer().type() =~# '^\%(tree\|blob\)$' |
-    \   nnoremap <buffer> .. :edit %:h<CR> |
-    \ endif
-
+    nnoremap <silent> <leader>gs :Gstatus<CR>
+    nnoremap <silent> <leader>gd :Gdiff<CR>
+    nnoremap <silent> <leader>gc :Gcommit<CR>
+    nnoremap <silent> <leader>gb :Gblame<CR>
+    nnoremap <silent> <leader>gl :Glog<CR>
 " Fugitive Config }}}
 
 " NERDTree {{{
