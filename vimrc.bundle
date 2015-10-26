@@ -141,7 +141,7 @@ Plugin 'maxbrunsfeld/vim-yankstack'
     nmap <leader>f :NERDTreeTabsToggle<cr>
     nmap <leader>F :NERDTreeFind<cr>
 
-    " let NERDTreeQuitOnOpen=1
+    let NERDTreeQuitOnOpen=1
     let g:NERDTreeChDirMode=2
     let NERDTreeShowBookmarks=1
     let NERDTreeHighlightCursorline=1
