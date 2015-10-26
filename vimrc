@@ -179,7 +179,9 @@ endif
     noremap <Right> <NOP>
 " }}}
 
-map <leader>m :redir => m<bar>silent verbose map<bar>redir END<bar>new<bar>setl buftype=nofile<bar>put=m<bar>setl nomodifiable<CR>
+" \m to copy key mapping into a buffer {{{
+    map <leader>m :redir => m<bar>silent verbose map<bar>redir END<bar>new<bar>setl buftype=nofile<bar>put=m<bar>setl nomodifiable<CR>
+" }}}
 
 " Use Shift-Up, Shift-Down to move lines {{{
     nmap <S-Up> mz:m-2<cr>`z
@@ -188,5 +190,5 @@ map <leader>m :redir => m<bar>silent verbose map<bar>redir END<bar>new<bar>setl 
     vmap <S-Down> :m'>+<cr>`<my`>mzgv`yo`z
 " Use Shift-Up, Shift-Down to move lines }}}
 
-" vim: sw=4 ts=4 sts=4 et tw=78 foldlevel=1 foldmethod=marker
+" vim: sw=4 ts=4 sts=4 et tw=78 foldlevel=0 foldmethod=marker
 
