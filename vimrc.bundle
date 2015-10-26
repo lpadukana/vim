@@ -135,7 +135,7 @@ Plugin 'scrooloose/syntastic'
     let g:NERDTreeChDirMode=2
     let NERDTreeShowBookmarks=1
     let NERDTreeHighlightCursorline=1
-    let NERDTreeIgnore = ['tmp', '.yardoc', 'pkg']
+    let NERDTreeIgnore = ['.swp', 'pkg']
 " }}}
 
 " Git Gutter Settings {{{
