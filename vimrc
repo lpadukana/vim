@@ -60,13 +60,13 @@ endif
 
 " Make vim remember undos, even when the file is closed! {{{
     set undofile                    " Save undo's after file closes
-    set undolevels=1000             " How many undos
+    set undolevels=10000             " How many undos
     set undoreload=10000            " number of lines to save for undo
 
     " First, do $ mkdir ~/.vim/backup ~/.vim/swp ~/.vim/undo
-    set undodir=~/.vim/undo//
-    set backupdir=~/.vim/backup//
-    set directory=~/.vim/swp//
+    set undodir=~/.vim_history/undo//
+    set backupdir=~/.vim_history/backup//
+    set directory=~/.vim_history/swp//
 " }}}
 
 " Automatic Formatting - Remove Trailing Spaces {{{
