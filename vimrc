@@ -32,6 +32,7 @@ endif
     set exrc                " Allow a .vimrc in the project directory
     set secure              " Make sure those project .vimrc's are safe
 
+    set relativenumber
     set hls
     set listchars=tab:=»,trail:·
     set synmaxcol=128
