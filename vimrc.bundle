@@ -60,6 +60,13 @@ Plugin 'bronson/vim-visual-star-search'
 Plugin 'sjl/gundo.vim'
 Plugin 'maxbrunsfeld/vim-yankstack'
 Plugin 'mhinz/vim-startify'
+Plugin 'kana/vim-textobj-user'
+Plugin 'kana/vim-textobj-datetime'
+Plugin 'kana/vim-textobj-fold'
+Plugin 'kana/vim-textobj-line'
+Plugin 'beloglazov/vim-textobj-quotes'
+Plugin 'mattn/vim-textobj-url'
+Plugin 'tek/vim-textobj-ruby'
 
 " All of your Plugins must be added before this
 
