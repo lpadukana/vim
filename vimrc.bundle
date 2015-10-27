@@ -59,6 +59,7 @@ Plugin 'scrooloose/syntastic'
 Plugin 'bronson/vim-visual-star-search'
 Plugin 'sjl/gundo.vim'
 Plugin 'maxbrunsfeld/vim-yankstack'
+Plugin 'mhinz/vim-startify'
 
 " All of your Plugins must be added before this
 
@@ -86,6 +87,10 @@ Plugin 'maxbrunsfeld/vim-yankstack'
 
     nmap <leader>o <Plug>yankstack_substitute_older_paste
     nmap <leader>i <Plug>yankstack_substitute_newer_paste
+" }}}
+
+" Startify {{{
+    let g:startify_session_dir = '~/.vim_history/session'
 " }}}
 
 " Set colors {{{
