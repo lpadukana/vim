@@ -170,10 +170,10 @@ endif
 " Function Keys }}}
 
 " Break Bad Habits {{{
-    noremap <Up> <NOP>
-    noremap <Down> <NOP>
-    noremap <Left> <NOP>
-    noremap <Right> <NOP>
+"    noremap <Up> <NOP>
+"    noremap <Down> <NOP>
+"    noremap <Left> <NOP>
+"    noremap <Right> <NOP>
 " }}}
 
 " \m to copy key mapping into a buffer {{{
