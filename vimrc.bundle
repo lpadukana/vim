@@ -67,6 +67,9 @@ Plugin 'kana/vim-textobj-line'
 Plugin 'beloglazov/vim-textobj-quotes'
 Plugin 'mattn/vim-textobj-url'
 Plugin 'tek/vim-textobj-ruby'
+Plugin 'tpope/vim-projectionist'
+Plugin 'tpope/vim-rake'
+Plugin 'tpope/vim-bundler'
 
 " All of your Plugins must be added before this
 
