@@ -173,6 +173,7 @@ Plugin 'tpope/vim-bundler'
 
     let g:ctrlp_map = '<c-p>'
     let g:ctrlp_cmd = 'CtrlP'
+    let g:ctrlp_match_window = 'results:100'
 
     let g:ctrlp_custom_ignore = {
       \ 'dir':  '\v[\/]\.(git|hg|svn)$',
