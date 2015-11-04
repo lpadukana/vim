@@ -118,17 +118,11 @@ endif
 " }}}
 
 " Clipboard {{{
-    " Easier way to copy and paste from the global clipboard
-    map <leader>p "+p
-    map <leader>y "+y
-
-    " Use system clipboard
-    " if has('clipboard')
-        " set clipboard=unnamed,unnamedplus
-    " else
-        " On mac and Windows, use * register for copy-paste
-        " set clipboard=unnamed
-    " endif
+    if has('unnamedplus')
+        set clipboard=unnamed,unnamedplus
+    else
+        set clipboard=unnamed
+    endif
 " }}}
 
 " Select the entire file {{{
