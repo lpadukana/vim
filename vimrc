@@ -4,7 +4,6 @@ if filereadable(glob("~/.vim/vimrc.bundle"))
     source ~/.vim/vimrc.bundle
 endif
 
-
 " Better Feel In the Editor {{{
     set tabstop=2
     set shiftwidth=2
@@ -63,7 +62,7 @@ endif
 
 " Make vim remember undos, even when the file is closed! {{{
     set undofile                    " Save undo's after file closes
-    set undolevels=10000             " How many undos
+    set undolevels=10000            " How many undos
     set undoreload=10000            " number of lines to save for undo
 
     " First, do $ mkdir ~/.vim/backup ~/.vim/swp ~/.vim/undo
@@ -81,8 +80,8 @@ endif
 " }}}
 
 " Jump to the next row on long lines {{{
-    " map <Down> gj
-    " map <Up>   gk
+    map <Down> gj
+    map <Up>   gk
     nnoremap j gj
     nnoremap k gk
 " }}}
@@ -93,7 +92,7 @@ endif
     cmap w!! w !sudo tee % > /dev/null
 " }}}
 
-" :Q and :W are accidental {{{
+" :Q and :W are accidents {{{
     cnoreabbrev Q q
     cnoreabbrev W w
 " }}}
@@ -107,8 +106,8 @@ endif
 " }}}
 
 " Shortcuts for debugging {{{
-    autocmd FileType ruby map <leader>d orequire 'pry'; binding.pry; puts ""
-    autocmd FileType ruby map <leader>D Orequire 'pry'; binding.pry; puts ""
+    autocmd FileType ruby map <leader>d orequire 'pry'; binding.pry;
+    autocmd FileType ruby map <leader>D Orequire 'pry'; binding.pry;
 
     autocmd FileType javascript map <leader>d odebugger;
     autocmd FileType javascript map <leader>D Odebugger;
