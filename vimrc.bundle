@@ -70,6 +70,7 @@ Plugin 'tek/vim-textobj-ruby'
 Plugin 'tpope/vim-projectionist'
 Plugin 'tpope/vim-rake'
 Plugin 'tpope/vim-bundler'
+Plugin 'tpope/vim-commentary'
 
 " All of your Plugins must be added before this
 
