@@ -201,5 +201,11 @@ endif
     augroup END
 " }}}
 
+" Gui {{{
+    if has('gui_running')
+        set guifont=Consolas:h18
+    endif
+" }}}
+
 " vim: sw=4 ts=4 sts=4 et tw=78 foldlevel=0 foldmethod=marker
 
