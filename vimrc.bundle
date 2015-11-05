@@ -71,6 +71,7 @@ Plugin 'tpope/vim-projectionist'
 Plugin 'tpope/vim-rake'
 Plugin 'tpope/vim-bundler'
 Plugin 'tpope/vim-commentary'
+Plugin 'kshenoy/vim-signature'
 
 " All of your Plugins must be added before this
 
@@ -130,7 +131,7 @@ Plugin 'tpope/vim-commentary'
   " unicode symbols
   let g:airline_symbols.linenr = '␤'
   let g:airline_symbols.branch = '⎇'
-  let g:airline_symbols.readonly = ''
+  let g:airline_symbols.readonly = 'RO'
 
 " Airline Config }}}
 
