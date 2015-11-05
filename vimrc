@@ -54,10 +54,13 @@ endif
 " }}}
 
 " This will set filetype instead of sourcing a file {{{
-    au! BufRead,BufNewFile *.rb setfiletype ruby
-    au! BufRead,BufNewFile *.haml setfiletype haml
-    au! BufRead,BufNewFile *.html setfiletype html
-    au! BufRead,BufNewFile *.ino setfiletype cpp
+    au! BufRead,BufNewFile *.rb set filetype=ruby
+    au! BufRead,BufNewFile *.haml set filetype=haml
+    au! BufRead,BufNewFile *.html set filetype=html
+    au! BufRead,BufNewFile *.ino set filetype=cpp
+    au! BufRead,BufNewFile *.md set filetype=markdown
+    au! BufRead,BufNewFile *.js set filetype=javascript
+    au! BufRead,BufNewFile *.py set filetype=python
 " }}}
 
 " Make vim remember undos, even when the file is closed! {{{
