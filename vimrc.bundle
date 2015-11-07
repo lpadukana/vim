@@ -78,6 +78,8 @@ Plugin 'Shougo/neomru.vim'
 Plugin 'Shougo/unite-session'
 Plugin 'Shougo/neoyank.vim'
 Plugin 'Shougo/unite-help'
+Plugin 'tsukkee/unite-tag'
+Plugin 'osyo-manga/unite-quickfix'
 Plugin 'ujihisa/unite-colorscheme'
 
 " All of your Plugins must be added before this
