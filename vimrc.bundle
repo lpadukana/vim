@@ -210,15 +210,17 @@ Plugin 'ujihisa/unite-colorscheme'
     nmap <space> [unite]
 
     nnoremap <silent> [unite]<tab>     :<C-u>Unite -buffer-name=menu menu<CR>
-    nnoremap <silent> [unite]<space>   :<C-u>Unite source<CR>
-    nnoremap <silent> [unite]f         :<C-u>Unite -buffer-name=files buffer file_rec/async:! neomru/file bookmark file/new directory/new<CR>
-    nnoremap <silent> [unite]r         :<C-u>Unite -buffer-name=register register<CR>
+    nnoremap <silent> [unite]<space>   :<C-u>Unite -buffer-name=files buffer file_rec/async:! tag/file neomru/file bookmark file/new directory/new<CR>
+    nnoremap <silent> [unite]s         :<C-u>Unite source<CR>
+    nnoremap <silent> [unite]r         :<C-u>Unite -buffer-name=registers register<CR>
     nnoremap <silent> [unite]o         :<C-u>Unite -buffer-name=outline outline<CR>
+    nnoremap <silent> [unite]:         :<C-u>Unite -buffer-name=output output<CR>
     nnoremap <silent> [unite]t         :<C-u>Unite -buffer-name=tags tag<CR>
     nnoremap <silent> [unite]y         :<C-u>Unite -buffer-name=yanks history/yank<CR>
     nnoremap <silent> [unite]c         :<C-u>Unite -buffer-name=commands command<CR>
     nnoremap <silent> [unite]l         :<C-u>Unite -buffer-name=lines line<CR>
     nnoremap <silent> [unite]x         :<C-u>Unite -buffer-name=launcher launcher<CR>
+    nnoremap <silent> [unite]q         :<C-u>Unite -buffer-name=quickfix quickfix<CR>
     nnoremap <silent> [unite]ma        :<C-u>Unite mapping<CR>
     nnoremap <silent> [unite]me        :<C-u>Unite output:message<CR>
 
