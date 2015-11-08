@@ -38,6 +38,11 @@ endif
     set encoding=utf-8
     set number
     set macmeta
+
+    try
+      lang en_us
+    catch
+    endtry
 " }}}
 
 " Display Unprintable Chars {{{
@@ -225,5 +230,5 @@ endif
     endif
 " }}}
 
-" vim: sw=4 ts=4 sts=4 et foldlevel=0 foldmethod=marker
+" vim: sw=4 ts=4 sts=4 et foldlevel=1 foldmethod=marker
 
