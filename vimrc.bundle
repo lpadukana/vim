@@ -207,25 +207,31 @@ Plugin 'ujihisa/unite-colorscheme'
 
 " Unite {{{
     nnoremap [unite] <Nop>
-    nmap <space> [unite]
+    nmap <F2> [unite]
+    nmap <Space> [unite]
 
-    nnoremap <silent> [unite]<tab>     :<C-u>Unite -buffer-name=menu menu<CR>
-    nnoremap <silent> [unite]<space>   :<C-u>Unite -buffer-name=files buffer file_rec/async:! tag/file neomru/file bookmark session session/new file/new directory/new<CR>
+    nnoremap <silent> [unite]<Space>   :<C-u>Unite -buffer-name=files buffer file_rec/async:! tag/file neomru/file bookmark session session/new file/new directory/new<CR>
+    nnoremap <silent> [unite]<F2>      :<C-u>Unite -buffer-name=files buffer file_rec/async:! tag/file neomru/file bookmark session session/new file/new directory/new<CR>
+    nnoremap <silent> [unite]<Tab>     :<C-u>Unite -buffer-name=menu menu<CR>
+
     nnoremap <silent> [unite]s         :<C-u>Unite source<CR>
-    nnoremap <silent> [unite]r         :<C-u>Unite -buffer-name=registers register<CR>
-    nnoremap <silent> [unite]o         :<C-u>Unite -buffer-name=outline outline<CR>
+    nnoremap <silent> [unite]/         :<C-u>Unite -buffer-name=lines line<CR>
     nnoremap <silent> [unite]:         :<C-u>Unite -buffer-name=output output<CR>
     nnoremap <silent> [unite]t         :<C-u>Unite -buffer-name=tags tag<CR>
+    nnoremap <silent> [unite]g         :<C-u>Unite -buffer-name=grep grep:.<CR>
+    nnoremap <silent> [unite]r         :<C-u>Unite -buffer-name=registers register<CR>
+    nnoremap <silent> [unite]o         :<C-u>Unite -buffer-name=outline outline<CR>
     nnoremap <silent> [unite]y         :<C-u>Unite -buffer-name=yanks history/yank<CR>
     nnoremap <silent> [unite]c         :<C-u>Unite -buffer-name=commands command<CR>
-    nnoremap <silent> [unite]/         :<C-u>Unite -buffer-name=lines line<CR>
     nnoremap <silent> [unite]h         :<C-u>Unite -buffer-name=help help<CR>
     nnoremap <silent> [unite]x         :<C-u>Unite -buffer-name=launcher launcher<CR>
     nnoremap <silent> [unite]q         :<C-u>Unite -buffer-name=quickfix quickfix<CR>
     nnoremap <silent> [unite]l         :<C-u>Unite -buffer-name=location location_list<CR>
-    nnoremap <silent> [unite]g         :<C-u>Unite -buffer-name=grep grep:.<CR>
-    nnoremap <silent> [unite]ma        :<C-u>Unite mapping<CR>
-    nnoremap <silent> [unite]me        :<C-u>Unite output:message<CR>
+    nnoremap <silent> [unite]ma        :<C-u>Unite -buffer-name=keymap mapping<CR>
+    nnoremap <silent> [unite]me        :<C-u>Unite -buffer-name=messages output:message<CR>
+    nnoremap <silent> [unite]R         :<C-u>Unite -buffer-name=resume resume<CR>
+
+    nmap <F1> [unite]h
 
     " nnoremap <silent> [unite]fs        :<C-u>Unite -buffer-name=files -no-split jump_point file_point buffer_tab file_rec:! file file/new<CR>
     " nnoremap <silent> [unite]fd        :<C-u>UniteWithCurrentDir -buffer-name=files buffer bookmark file<CR>
