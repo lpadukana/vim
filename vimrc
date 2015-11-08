@@ -15,7 +15,6 @@ endif
     set backspace=indent,eol,start
     set incsearch           " Show matching search results as typing
     set ruler               " Show row and column in status bar
-    set wildmenu            " Nicer tab completion for :ex commands
     set ignorecase          " Case insensitive search by default
     set smartcase           " Use case sensitive search in a captial letter is used
     set warn                " Show what mode your in (insert, etc.)
@@ -25,19 +24,42 @@ endif
     set cursorline          " Highlight the line which the cursor is on
     set laststatus=2        " Always show a status bar
     set mouse=a             " Make the mouse work - even in terminals
-    set list                " Show `listchars` characters
     set nojoinspaces        " Use 1 space after "." when joining lines instead of 2
     set shiftround          " Indent to the closest shiftwidth
     set exrc                " Allow a .vimrc in the project directory
     set secure              " Make sure those project .vimrc's are safe
 
+    set fcs=vert:│          " Solid line for vsplit separator
+    set virtualedit=onemore " Give one virtual space at end of line
+
     set relativenumber
     set hls
-    set listchars=tab:=»,trail:·
     set synmaxcol=128
     set encoding=utf-8
     set number
     set macmeta
+" }}}
+
+" Display Unprintable Chars {{{
+    set list                " Show `listchars` characters
+    " set listchars=tab:=»,trail:·
+    set listchars=tab:▸\ ,extends:❯,precedes:❮,nbsp:␣,trail:·
+    set showbreak=↪
+" }}}
+
+" Wild Menu {{{
+    set wildmode=list:longest,full
+    set wildmenu
+    set wildignore=*.o,*.obj,*~ "stuff to ignore when tab completing
+    set wildignore+=*DS_Store*
+    set wildignore+=vendor/rails/**
+    set wildignore+=vendor/cache/**
+    set wildignore+=*.gem
+    set wildignore+=log/**
+    set wildignore+=tmp/**
+    set wildignore+=*.png,*.jpg,*.gif
+    set wildignore+=*.so,*.swp,*.zip,*/.Trash/**,*.pdf,*.dmg,*/Library/**,*/.rbenv/**
+    set wildignore+=*/.nx/**,*.app
 " }}}
 
 " Improve vim's scrolling speed {{{
