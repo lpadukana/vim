@@ -210,7 +210,7 @@ Plugin 'ujihisa/unite-colorscheme'
     nmap <space> [unite]
 
     nnoremap <silent> [unite]<tab>     :<C-u>Unite -buffer-name=menu menu<CR>
-    nnoremap <silent> [unite]<space>   :<C-u>Unite -buffer-name=files buffer file_rec/async:! tag/file neomru/file bookmark file/new directory/new<CR>
+    nnoremap <silent> [unite]<space>   :<C-u>Unite -buffer-name=files buffer file_rec/async:! tag/file neomru/file bookmark session session/new file/new directory/new<CR>
     nnoremap <silent> [unite]s         :<C-u>Unite source<CR>
     nnoremap <silent> [unite]r         :<C-u>Unite -buffer-name=registers register<CR>
     nnoremap <silent> [unite]o         :<C-u>Unite -buffer-name=outline outline<CR>
