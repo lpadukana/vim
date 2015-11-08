@@ -131,6 +131,11 @@ endif
     map Y y$
 " }}}
 
+" _ and | for quick window splits {{{
+    nnoremap _ :sp<cr>
+    nnoremap <bar> :vsp<cr>
+" }}}
+
 " Close buffer without closing window {{{
     map <leader>q :bp<bar>sp<bar>bn<bar>bd<CR>
 " }}}
