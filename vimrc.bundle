@@ -219,6 +219,7 @@ Plugin 'ujihisa/unite-colorscheme'
     nnoremap <silent> [unite]y         :<C-u>Unite -buffer-name=yanks history/yank<CR>
     nnoremap <silent> [unite]c         :<C-u>Unite -buffer-name=commands command<CR>
     nnoremap <silent> [unite]/         :<C-u>Unite -buffer-name=lines line<CR>
+    nnoremap <silent> [unite]h         :<C-u>Unite -buffer-name=help help<CR>
     nnoremap <silent> [unite]x         :<C-u>Unite -buffer-name=launcher launcher<CR>
     nnoremap <silent> [unite]q         :<C-u>Unite -buffer-name=quickfix quickfix<CR>
     nnoremap <silent> [unite]l         :<C-u>Unite -buffer-name=location location_list<CR>
