@@ -163,6 +163,10 @@ endif
     nmap <leader>a ggVG
 " }}}
 
+" Select last pasted {{{
+    nnoremap <expr> gp '`[' . strpart(getregtype(), 0, 1) . '`]'
+" }}}
+
 " Switch windows {{{
     " Cycle across all
     noremap <tab> <c-w><c-w>
