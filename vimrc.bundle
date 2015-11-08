@@ -221,6 +221,7 @@ Plugin 'ujihisa/unite-colorscheme'
     nnoremap <silent> [unite]l         :<C-u>Unite -buffer-name=lines line<CR>
     nnoremap <silent> [unite]x         :<C-u>Unite -buffer-name=launcher launcher<CR>
     nnoremap <silent> [unite]q         :<C-u>Unite -buffer-name=quickfix quickfix<CR>
+    nnoremap <silent> [unite]g         :<C-u>Unite -buffer-name=grep grep:.<CR>
     nnoremap <silent> [unite]ma        :<C-u>Unite mapping<CR>
     nnoremap <silent> [unite]me        :<C-u>Unite output:message<CR>
 
