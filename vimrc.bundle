@@ -81,6 +81,7 @@ Plugin 'Shougo/unite-help'
 Plugin 'tsukkee/unite-tag'
 Plugin 'osyo-manga/unite-quickfix'
 Plugin 'ujihisa/unite-colorscheme'
+Plugin 'ekalinin/Dockerfile.vim'
 
 " All of your Plugins must be added before this
 
