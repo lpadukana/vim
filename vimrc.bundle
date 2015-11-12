@@ -82,6 +82,8 @@ Plugin 'tsukkee/unite-tag'
 Plugin 'osyo-manga/unite-quickfix'
 Plugin 'ujihisa/unite-colorscheme'
 Plugin 'ekalinin/Dockerfile.vim'
+Plugin 'tpope/vim-vividchalk'
+
 
 " All of your Plugins must be added before this
 
@@ -112,33 +114,32 @@ Plugin 'ekalinin/Dockerfile.vim'
 " }}}
 
 " Set colors {{{
+    set t_Co=256
+    set background=dark
+    let g:jellybeans_overrides = {
+        \ 'Todo': { 'guifg': '303030', 'guibg': 'f0f000',
+        \   'ctermfg': 'Black', 'ctermbg': 'Yellow',
+        \   'attr': 'bold' },
+        \}
 
-  set background=dark
-  colorscheme jellybeans
-
+    colorscheme jellybeans
 " Set colors }}}
 
 " Airline Config {{{
+    let g:airline#extensions#tabline#enabled = 1
+    let g:airline#extensions#tabline#show_buffers = 1
 
-  " let g:airline_theme = 'jellybeans'
-  " let g:airline_theme = 'simple'
-  " let g:airline_theme = 'serene'
+    if !exists('g:airline_symbols')
+        let g:airline_symbols = {}
+    endif
 
-  let g:airline#extensions#tabline#enabled = 1
-  let g:airline#extensions#tabline#show_buffers = 1
+    let g:airline_left_sep = ''
+    let g:airline_right_sep = ''
 
-  if !exists('g:airline_symbols')
-    let g:airline_symbols = {}
-  endif
-
-  let g:airline_left_sep = ''
-  let g:airline_right_sep = ''
-
-  " unicode symbols
-  let g:airline_symbols.linenr = '␤'
-  let g:airline_symbols.branch = '⎇'
-  let g:airline_symbols.readonly = 'RO'
-
+    " unicode symbols
+    let g:airline_symbols.linenr = '␤'
+    let g:airline_symbols.branch = '⎇'
+    let g:airline_symbols.readonly = 'RO'
 " Airline Config }}}
 
 " Fugitive Config {{{
