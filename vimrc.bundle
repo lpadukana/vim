@@ -83,7 +83,7 @@ Plugin 'osyo-manga/unite-quickfix'
 Plugin 'ujihisa/unite-colorscheme'
 Plugin 'ekalinin/Dockerfile.vim'
 Plugin 'tpope/vim-vividchalk'
-
+Plugin 'ap/vim-css-color'
 
 " All of your Plugins must be added before this
 
@@ -180,7 +180,7 @@ Plugin 'tpope/vim-vividchalk'
     let g:ctrlp_max_files = 600
     let g:ctrlp_max_depth = 5
 
-    let g:ctrlp_map = '<c-p>'
+    let g:ctrlp_map = '<s-c-p>'
     let g:ctrlp_cmd = 'CtrlP'
     let g:ctrlp_match_window = 'results:100'
 
