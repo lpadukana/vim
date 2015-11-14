@@ -180,7 +180,8 @@ Plugin 'ap/vim-css-color'
     let g:ctrlp_max_files = 600
     let g:ctrlp_max_depth = 5
 
-    let g:ctrlp_map = '<s-c-p>'
+    nmap <leader>p :CtrlP<CR>
+    let g:ctrlp_map = ''
     let g:ctrlp_cmd = 'CtrlP'
     let g:ctrlp_match_window = 'results:100'
 
