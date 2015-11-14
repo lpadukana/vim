@@ -34,7 +34,7 @@ endif
 
     set relativenumber
     set hls
-    set synmaxcol=128
+    set synmaxcol=1024
     set encoding=utf-8
     set number
     set macmeta
