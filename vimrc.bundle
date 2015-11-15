@@ -123,8 +123,8 @@ Plugin 'NLKNguyen/papercolor-theme'
         \   'attr': 'bold' },
         \}
 
-    " colorscheme jellybeans
-    colorscheme PaperColor
+    colorscheme jellybeans
+    " colorscheme PaperColor
 " Set colors }}}
 
 " Airline Config {{{
