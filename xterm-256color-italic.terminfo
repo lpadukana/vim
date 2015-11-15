@@ -1,0 +1,13 @@
+# A xterm-256color based TERMINFO that adds the escape sequences for italic.
+# How to
+#   $ tic screen-256color-italic.terminfo
+# Type "xterm-256color-italic" into iTerm2 > Preferences > Profiles > Terminal > Report Terminal Type
+# Restart iterm and test italics by
+#   $ echo `tput sitm`italics`tput ritm`
+# To make comments italics in vim, add this after setting colorscheme
+# highlight Comment cterm=italic
+
+xterm-256color-italic|xterm with 256 colors and italic,
+  sitm=\E[3m, ritm=\E[23m,
+  use=xterm-256color,
+
