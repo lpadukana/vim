@@ -122,15 +122,11 @@ Plugin 'gerw/vim-HiLinkTrace'
         \ 'markdownItalic': {
         \   'guifg': 'cf6a4c',
         \   'guibg': '',
-        \   'ctermfg': 'Black',
-        \   'ctermbg': 'Yellow',
-        \   'attr': '',
+        \   'attr': 'italic',
         \ },
         \ 'markdownBold': {
         \   'guifg': 'cf6a4c',
         \   'guibg': '',
-        \   'ctermfg': 'Black',
-        \   'ctermbg': 'Red',
         \   'attr': 'bold',
         \ }
         \}
