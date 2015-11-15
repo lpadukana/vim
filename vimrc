@@ -141,6 +141,13 @@ endif
     map Y y$
 " }}}
 
+" C- to switch windows {{{
+    map <C-j> <C-w>j<C-w>_
+    map <C-k> <C-w>k<C-w>_
+    map <C-h> <C-w>h<C-w><bar>
+    map <C-l> <C-w>l<C-w><bar>
+" }}}
+
 " _ and | for quick window splits {{{
     nnoremap _ :sp<cr>
     nnoremap <bar> :vsp<cr>
