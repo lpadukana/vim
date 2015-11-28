@@ -126,6 +126,10 @@ endif
     nnoremap k gk
 " }}}
 
+" jj is ESC {{{
+    imap jj <Esc>
+" }}}
+
 " Late Sudo {{{
     " If you forgot to sudo, :w!! will write this file with sudo
     " Without this, you could use ':w !sudo tee %'
@@ -135,6 +139,8 @@ endif
 " :Q and :W are accidents {{{
     cnoreabbrev Q q
     cnoreabbrev W w
+    cnoreabbrev Wq wq
+    cnoreabbrev WQ wq
 " }}}
 
 " Y should act like C and D {{{
