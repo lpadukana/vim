@@ -45,6 +45,10 @@ endif
     endtry
 " }}}
 
+" crontab -e happiness {{{
+    autocmd filetype crontab setlocal nobackup nowritebackup
+" }}}
+
 " Better cursor {{{
     if exists('$TMUX')
         let &t_SI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=1\x7\<Esc>\\"
