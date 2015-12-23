@@ -86,6 +86,7 @@ Plugin 'tpope/vim-vividchalk'
 Plugin 'ap/vim-css-color'
 Plugin 'NLKNguyen/papercolor-theme'
 Plugin 'gerw/vim-HiLinkTrace'
+Plugin 'fatih/vim-go'
 
 " All of your Plugins must be added before this
 
