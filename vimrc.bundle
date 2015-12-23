@@ -45,7 +45,6 @@ Plugin 'tpope/vim-sensible'
 Plugin 'bling/vim-airline'
 Plugin 'nanotech/jellybeans.vim'
 Plugin 'tpope/vim-fugitive'
-Plugin 'airblade/vim-gitgutter'
 Plugin 'scrooloose/nerdtree'
 Plugin 'jistr/vim-nerdtree-tabs'
 Plugin 'tpope/vim-unimpaired'
@@ -180,10 +179,6 @@ Plugin 'fatih/vim-go'
     let NERDTreeShowBookmarks=1
     let NERDTreeHighlightCursorline=1
     let NERDTreeIgnore = ['.swp', 'pkg']
-" }}}
-
-" Git Gutter Settings {{{
-    let g:gitgutter_max_signs = 1000
 " }}}
 
 " CtrlP Mappings {{{
